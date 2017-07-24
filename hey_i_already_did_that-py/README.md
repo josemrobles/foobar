@@ -1,4 +1,4 @@
-# hey_i_already_did_that-py
+Hey I already did that
 ===============
 
 Commander Lambda uses an automated algorithm to assign minions randomly to tasks, in order to keep her minions on their toes. But 
