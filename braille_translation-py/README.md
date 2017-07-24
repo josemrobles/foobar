@@ -1,6 +1,3 @@
-# braille-translation-py
-Google.com/foobar code challenge - my first attempt at writing python :)
-
 Braille Translation
 ===================
 
