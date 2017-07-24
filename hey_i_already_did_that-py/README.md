@@ -1,5 +1,5 @@
 # hey_i_already_did_that-py
-Google Foobar challenge
+===============
 
 Commander Lambda uses an automated algorithm to assign minions randomly to tasks, in order to keep her minions on their toes. But 
 you've noticed a flaw in the algorithm - it eventually loops back on itself, so that instead of assigning new minions as it iterates, 
