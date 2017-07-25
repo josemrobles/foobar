@@ -2,12 +2,15 @@
 
 def answer (s):
 		
-	# Place the string into a list
-	l = [x for x in list(s)]
+	l = list(s)
+	#a = [i for i in l if i is not "-"]
+	a_ = [i for i in l if i in ["<",">"]]
+
+	print l
 
 	for x in l:
 		print x
 
-	return l
+	return a_
 
-print answer("<<>><")
+print answer("<<->><000")
