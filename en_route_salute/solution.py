@@ -7,21 +7,37 @@ def validateInput(s):
 		print len(s)
 		return False
 
+def calcLeft(d):
+	count = 0
+	for r1 in d['right']:
+		for l1 in d['left']:
+			if r1 > l1:
+				count += 1
+	return count
+
+def calcRight(d):
+	count = 0
+	for r1 in d['right']:
+		for l1 in d['left']:
+			if r1 > l1:
+				count += 1
+	return count
+
 def answer (s):
 	
 	if validateInput(s) is True:		
 		l = list(s)
 		a = [i for i in l if i in ["<",">"]]
-		rl = {'right': [], 'left': []}
+		d = {'right': [], 'left': []}
 
 		for x in a:
 			if x == ">":
-				rl['right'].append(x)
+				d['right'].append(x)
 
 			if x == "<":
-				rl['left'].append(x)			
+				d['left'].append(x)			
 
-		return rl
+		return calcLeft(d) + calcRight(d)
 
 print answer("<<>><")
-print answer("--->-><-><-->-")
+#print answer("--->-><-><-->-")
