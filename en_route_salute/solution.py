@@ -12,10 +12,16 @@ def answer (s):
 	if validateInput(s) is True:		
 		l = list(s)
 		a = [i for i in l if i in ["<",">"]]
+		rl = {'right': [], 'left': []}
 
-		#for x in a:
-		#	print x
+		for x in a:
+			if x == ">":
+				rl['right'].append(x)
 
-		return a
+			if x == "<":
+				rl['left'].append(x)			
+
+		return rl
 
 print answer("<<>><")
+print answer("--->-><-><-->-")
